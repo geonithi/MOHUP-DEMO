@@ -27,7 +27,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 25, minZoom: 7
+         maxZoom: 28, minZoom: 5
     })
 });
 
@@ -35,8 +35,8 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new SearchLayer({
-      layer: lyr_SEwer_1,
-      colName: 'Date_Updat',
+      layer: lyr_HSD_Project_1,
+      colName: 'BLOCK_NO',
       zoom: 10,
       collapsed: true,
       map: map
@@ -47,7 +47,7 @@ map.addControl(layerSwitcher);
     .getElementsByTagName('button')[0].className +=
     ' fa fa-binoculars';
     
-map.getView().fit([5620212.500844, 3018301.695451, 5627430.508654, 3023115.674409], map.getSize());
+map.getView().fit([5588026.792451, 2984487.216289, 5665095.657462, 3032627.005870], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
